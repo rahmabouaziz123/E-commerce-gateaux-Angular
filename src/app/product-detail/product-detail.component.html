@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row">
+    <div class="card col-md-5">
+      <img
+        class="card-img-top"
+        src="{{ bdUrl + product.image }}"
+        alt="{{ product.name }}"
+        style="width: 85%; align-self: center"
+      />
+
+      <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+
+        <div class="card-text">
+          <p>Category : {{ product.category }}</p>
+
+          <p>Unit price: {{ product.unitPrice }}</p>
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <button class="btn btn-info" (click)="goBack()">Back</button>
+      </div>
+    </div>
+
+    <div class="form-group col-md-7 row">
+      <div>
+        <h5 class="formatComment">Comments</h5>
+
+        <div *ngFor="let c of product.comments">
+          <app-comment [comment]="c"></app-comment>
+        </div>
+      </div>
+
+      <div class="">
+        <span>Your Comment</span>
+
+        <textarea [(ngModel)]="comment.comment" style="width: 90%"></textarea>
+      </div>
+
+      <div class="">
+        <span>Your Classification </span>
+
+        <input type="range" min="0" max="5" [(ngModel)]="comment.rating" />
+       <p > {{ comment.rating }}</p>
+      </div>
+
+      <button class="btn btn-secondary" (click)="addcomment()">
+        Add Comment
+      </button>
+    </div>
+  </div>
+</div>

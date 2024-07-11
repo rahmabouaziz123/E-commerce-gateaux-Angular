@@ -1,0 +1,48 @@
+
+
+
+
+
+
+<div class="container formParent ">
+<div  class=" formChild" *ngFor ="let p of products let index= index"> 
+<div class="card  card1 " style="width: 18rem;">
+  <img src="{{bdUrl + p.image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+
+   
+  <h1 class="formatName">{{p.name}} </h1>
+    <p class="card-text"> {{p.starts}}</p>
+    <p class="card-text">{{p.description}}</p>
+    <p>{{p.unitPrice}} $</p>
+    
+  <div class="formaBtn">
+    
+      <button type="button" class="btn btn-primary forBTN1 "  [routerLink]="['/productdetail',p.reference]">Details</button>
+    <button type="button" class="btn btn-primary forBTN2">BY</button>
+   
+  </div>
+
+  </div>
+</div>
+</div>
+
+<div class="" [hidden]="products">
+  <span class="spinner-border text-danger"> </span>
+  <span class="text-danger"> loading ..</span>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

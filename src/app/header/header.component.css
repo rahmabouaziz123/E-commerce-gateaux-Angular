@@ -1,0 +1,26 @@
+
+.formatTitre{
+    color: #ff0066;
+    text-align: center;
+}
+
+.active-link{
+    background: #ff0066;
+    color: aqua;
+}
+
+
+.formatNav{
+    background-color: #573818!important;
+    
+}
+
+a{
+    color: azure!important;
+    font-size: 20px!important;
+}
+
+.formatImage{
+    height: 50px;
+    width: 70px;
+}

@@ -1,0 +1,34 @@
+
+
+
+.formParent {
+    display: flex!important;
+    flex-wrap: wrap!important; /* Permet aux éléments de passer à la ligne lorsque l'espace est insuffisant */
+}
+
+.formChild {
+    align-content: flex-start!important;
+    margin: 10px; /* Ajoutez une marge entre les éléments si nécessaire */
+}
+.formaBtn{
+    display: flex;
+   
+}
+
+.forBTN2{
+    margin-left: 110px;
+   background-color: #573818!important;
+}
+
+.forBTN1{
+    background-color: #573818!important;
+}
+
+.card1{
+    background-color: #d39012!important;
+}
+
+.formatName{
+    color: aliceblue;
+}
+
