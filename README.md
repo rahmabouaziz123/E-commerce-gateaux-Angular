@@ -1,3 +1,12 @@
+//pour execution mon projet e-commerce (angular)
+=====> Finalement il ne faut pas oublier que pour utiliser une base de données on va lancer deux 
+serveurs : le 1er celui de notre application lancé avec la commande ng serve, une fois 
+positionné dans l’emplacement adéquat ; le 2ème celui du serveur json lancé avec la 
+commande json-server --watch db.json -d 2000, une fois positionné dans le dossier adéquat 
+(«json-server »). 
+
+
+
 # FirstProjet
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
